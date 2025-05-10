@@ -340,22 +340,37 @@
       <p>Lo cual son 6 combinaciones por recinto, 6 muestras impulso por recinto.</p>
       <p>A continuación se presentan nombradas con el siguiente orden lógico</p>
       <ul>
-        <li>"P(n° punto de medición)_F(n° punto de fuente)"</li>
+        <li>"F(n° punto de fuente)_P(n° punto de medición)"</li>
       </ul>
       
       <div class="audio-group">
         <h3>Muestras Recinto 01: Cámara Reverberante Acústica UACh</h3>
-        <div id="impulso-camara" class="player-container"></div>
+        <div id="salarev_F1_P1" class="player-container"></div>
+        <div id="salarev_F1_P2" class="player-container"></div>
+        <div id="salarev_F1_P3" class="player-container"></div>
+        <div id="salarev_F2_P1" class="player-container"></div>
+        <div id="salarev_F2_P2" class="player-container"></div>
+        <div id="salarev_F2_P3" class="player-container"></div>       
       </div>
       
       <div class="audio-group">
         <h3>Muestras Recinto 02: Pasillo de Salas Edificio 6K</h3>
-        <div id="impulso-14k" class="player-container"></div>
+        <div id="ed6k_F1_P1" class="player-container"></div>
+        <div id="ed6k_F1_P2" class="player-container"></div>
+        <div id="ed6k_F1_P3" class="player-container"></div>
+        <div id="ed6k_F2_P1" class="player-container"></div>
+        <div id="ed6k_F2_P2" class="player-container"></div>
+        <div id="ed6k_F2_P3" class="player-container"></div>       
       </div>
       
       <div class="audio-group">
         <h3>Muestra Recinto 03: Hall principal Edificio 14K</h3>
-        <div id="impulso-6k" class="player-container"></div>
+        <div id="ed14k_F1_P1" class="player-container"></div>
+        <div id="ed14k_F1_P2" class="player-container"></div>
+        <div id="ed14k_F1_P3" class="player-container"></div>
+        <div id="ed14k_F2_P1" class="player-container"></div>
+        <div id="ed14k_F2_P2" class="player-container"></div>
+        <div id="ed14k_F2_P3" class="player-container"></div>       
       </div>
     </section>
 
@@ -511,9 +526,28 @@
       createAudioPlayer("instrumento-seco", "audiosg/an_01_bot.wav", "muestra de instrumento");
       
       // Respuestas al impulso
-      createAudioPlayer("impulso-camara", "audiosg/salarev_F1_P3.wav", "Respuesta al impulso - Cámara Reverberante");
-      createAudioPlayer("impulso-14k", "audiosg/ed14K_F2_P2.wav", "Respuesta al impulso - Edificio 14K");
-      createAudioPlayer("impulso-6k", "audiosg/ed6K_F2_P1.wav", "Respuesta al impulso - Edificio 6K Pasillos");
+
+      createAudioPlayer("salarev_F1_P1", "audiosg/salarev_F1_P1.wav", "F1_P1");
+      createAudioPlayer("salarev_F1_P2", "audiosg/salarev_F1_P2.wav", "F1_P2");
+      createAudioPlayer("salarev_F1_P3", "audiosg/salarev_F1_P3.wav", "F1_P3");
+      createAudioPlayer("salarev_F2_P1", "audiosg/salarev_F2_P1.wav", "F2_P1");
+      createAudioPlayer("salarev_F2_P2", "audiosg/salarev_F2_P2.wav", "F2_P2");
+      createAudioPlayer("salarev_F2_P3", "audiosg/salarev_F2_P3.wav", "F2_P3");
+
+      createAudioPlayer("ed6k_F1_P1", "audiosg/ed6k_F1_P1.wav", "F1_P1");
+      createAudioPlayer("ed6k_F1_P2", "audiosg/ed6k_F1_P2.wav", "F1_P2");
+      createAudioPlayer("ed6k_F1_P3", "audiosg/ed6k_F1_P3.wav", "F1_P3");
+      createAudioPlayer("ed6k_F2_P1", "audiosg/ed6k_F2_P1.wav", "F2_P1");
+      createAudioPlayer("ed6k_F2_P2", "audiosg/ed6k_F2_P2.wav", "F2_P2");
+      createAudioPlayer("ed6k_F2_P3", "audiosg/ed6k_F2_P3.wav", "F2_P3");
+
+      createAudioPlayer("ed14k_F1_P1", "audiosg/ed14k_F1_P1.wav", "F1_P1");
+      createAudioPlayer("ed14k_F1_P2", "audiosg/ed14k_F1_P2.wav", "F1_P2");
+      createAudioPlayer("ed14k_F1_P3", "audiosg/ed14k_F1_P3.wav", "F1_P3");
+      createAudioPlayer("ed14k_F2_P1", "audiosg/ed14k_F2_P1.wav", "F2_P1");
+      createAudioPlayer("ed14k_F2_P2", "audiosg/ed14k_F2_P2.wav", "F2_P2");
+      createAudioPlayer("ed14k_F2_P3", "audiosg/ed14k_F2_P3.wav", "F2_P3");
+
       
       // Audios convolucionados
       createAudioPlayer("voz-camara", "audiosg/resultado_convolucionreverb_03_poem.wav", "Voz convolucionada - Cámara Reverberante");
