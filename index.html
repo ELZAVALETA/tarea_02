@@ -197,7 +197,6 @@
         <h1>T02 | RESPUESTA AL IMPULSO Y CONVOLUCIÓN</h1>
         <p>ACUS099: Procesamiento Digital de Señales</p>
       </header>
-      <p>(introducción/presentación)</p>
       <p>El presente trabajo tiene como objetivo documentar el proceso de captura y procesamiento de respuestas al impulso (IR) en distintos recintos de la Universidad Austral de Chile (UACh), con el fin de aplicar las respuestas al impulso obtenidas a los audios grabados en la sala anecoica mediante la técnica de convolución, para simular cómo sonarían dichas señales en cada uno de los recintos medidos. De esta manera, es posible evidenciar el efecto del entorno acústico sobre una señal seca. Esta actividad se enmarca dentro del estudio de la acústica de recintos y se basa en la normativa ISO 3382, la cual define los procedimientos estándar para la medición de la respuesta al impulso en espacios arquitectónicos.</p>
       <p>El proyecto fue desarrollado por un grupo de estudiantes de la carrera de Ingeniería Civil Acústica, quienes realizaron registros de respuesta al impulso en tres recintos distintos del campus. Además, se efectuaron registros de voz e instrumento musical en la cámara anecoica del mismo laboratorio, con el propósito de disponer de señales libres de reflexiones para su posterior procesamiento..</p>
       <p>En esta página se presenta una descripción detallada del grupo de trabajo, el equipamiento utilizado, los procedimientos de medición seguidos, y se incluyen fotografías in-situ y archivos de audio. También se muestran las formas de onda correspondientes a cada etapa del proceso, con el fin de ilustrar de forma clara y didáctica el resultado del procesamiento acústico aplicado.</p>
@@ -323,7 +322,7 @@
         <li>muestra de instrumento: botella metálica percutida a modo de instrumento idiófono</li>
       </ul>
       
-      <h4>Muestras</h4>
+      <h4> </h4>
       <div class="audio-group">
         <div id="voz-seca" class="player-container"></div>
       </div>
@@ -337,19 +336,25 @@
     <section id="impulsos" class="content-section">
       <h2>RESPUESTAS AL IMPULSO</h2>
       <p>Respuestas al impulso medidas en los diferentes recintos.</p>
+      <p>Como se representa en el apartado de "Recintos", se tomaron 3 punto de medición y 2 puntos de fuente en cada recinto.</p>
+      <p>Lo cual son 6 combinaciones por recinto, 6 muestras impulso por recinto.</p>
+      <p>A continuación se presentan nombradas con el siguiente orden lógico</p>
+      <ul>
+        <li>"P(n° punto de medición)_F(n° punto de fuente)"</li>
+      </ul>
       
       <div class="audio-group">
-        <h3>1. Cámara Reverberante</h3>
+        <h3>Muestras Recinto 01: Cámara Reverberante Acústica UACh</h3>
         <div id="impulso-camara" class="player-container"></div>
       </div>
       
       <div class="audio-group">
-        <h3>2. Edificio 14K</h3>
+        <h3>Muestras Recinto 02: Pasillo de Salas Edificio 6K</h3>
         <div id="impulso-14k" class="player-container"></div>
       </div>
       
       <div class="audio-group">
-        <h3>3. Edificio 6K Pasillos</h3>
+        <h3>Muestra Recinto 03: Hall principal Edificio 14K</h3>
         <div id="impulso-6k" class="player-container"></div>
       </div>
     </section>
