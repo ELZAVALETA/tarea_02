@@ -209,22 +209,22 @@
       <h2>EQUIPO</h2>
       <h3>Estudiantes</h3>
   <ul>
-    <li>Giorgio Belmar Velásquez - giorgio.belmar@alumnos.uach.cl 1</li>
-    <li>Martín de la Cuadra Dauelsberg - martin.delacuadra@alumnos.uach.cl 2</li>
+    <li>Giorgio Belmar Velásquez - giorgio.belmar@alumnos.uach.cl</li>
+    <li>Martín de la Cuadra Dauelsberg - martin.delacuadra@alumnos.uach.cl</li>
   </ul>
 
   <h3>Colaboradores</h3>
 
   <h4>Docentes</h4>
   <ul>
-    <li>Dr. Victor Poblete - vpoblete@uach.cl 1</li>
-    <li>Mg. Felipe Figueroa G. - felipe.figueroa01@uach.cl 2</li>
+    <li>Dr. Victor Poblete - vpoblete@uach.cl</li>
+    <li>Mg. Felipe Figueroa G. - felipe.figueroa01@uach.cl</li>
   </ul>
 
   <h4>Ayudantes</h4>
   <ul>
-    <li>Valentina Valderas S. - valentina.valderas@alumnos.uach.cl 1</li>
-    <li>Esteban Vargas C. - esteban.vargas01@alumnos.uach.cl 2</li>
+    <li>Valentina Valderas S. - valentina.valderas@alumnos.uach.cl</li>
+    <li>Esteban Vargas C. - esteban.vargas01@alumnos.uach.cl</li>
   </ul>
 </section>
 
@@ -316,13 +316,19 @@
       <h2>GRABACIONES SECAS</h2>
       <p>Se realizan 2 grabaciones en la cámara anecoica del instuto Acústica UACh. Una de voz y otra de un instrumento musical.</p>
       
+      <h4>Descripciones</h4>
+      
+      <ul class="audio-list">
+        <li>muestra de voz: extracto de poema "El Hombre Imaginario" (Nicanor Parra)</li>
+        <li>muestra de instrumento: botella metálica percutida a modo de instrumento idiófono</li>
+      </ul>
+      
+      <h4>Muestras</h4>
       <div class="audio-group">
-        <h3>registro de voz: extracto de poema "El Hombre Imaginario" (Nicanor Parra)</h3>
         <div id="voz-seca" class="player-container"></div>
       </div>
       
       <div class="audio-group">
-        <h3>registro de instrumento: botella metálica percutida a modo de instrumento idiófono</h3>
         <div id="instrumento-seco" class="player-container"></div>
       </div>
     </section>
@@ -496,8 +502,8 @@
     // Initialize audio players when the page loads
     document.addEventListener('DOMContentLoaded', () => {
       // Grabaciones secas
-      createAudioPlayer("voz-seca", "audiosg/an_03_poem.wav", "Voz seca (sin reverberación)");
-      createAudioPlayer("instrumento-seco", "audiosg/an_01_bot.wav", "Instrumento seco (sin reverberación)");
+      createAudioPlayer("voz-seca", "audiosg/an_03_poem.wav", "muestra de voz");
+      createAudioPlayer("instrumento-seco", "audiosg/an_01_bot.wav", "muestra de instrumento");
       
       // Respuestas al impulso
       createAudioPlayer("impulso-camara", "audiosg/salarev_F1_P3.wav", "Respuesta al impulso - Cámara Reverberante");
